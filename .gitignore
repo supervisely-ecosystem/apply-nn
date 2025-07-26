@@ -1,0 +1,8 @@
+.idea
+venv
+.venv
+supervisely_lib
+supervisely
+.DS_Store
+debug
+*.pyc
