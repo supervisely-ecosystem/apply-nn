@@ -20,9 +20,18 @@ def get_load_data_from_env():
         items_data = {"dataset_ids": [dataset_id]}
     elif project_id:
         items_data = {"project_id": project_id}
-
-    return {
+    train_task_id = os.environ.get("modal.state.trainTaskId", None)
+    model_data = None
+    if train_task_id:
+        model_data = {
+            "mode": "custom",
+            "train_task_id": train_task_id,
+        }
+    data = {
         "items": items_data,
     }
+    if model_data:
+        data["model"] = model_data
+    return data
 
 predict_app.load_from_json(get_load_data_from_env())
