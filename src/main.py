@@ -25,7 +25,7 @@ def get_load_data_from_env():
     if train_task_id:
         model_data = {
             "mode": "custom",
-            "train_task_id": train_task_id,
+            "train_task_id": int(train_task_id),
         }
     data = {
         "items": items_data,
