@@ -24,7 +24,7 @@
   "headless": false,
   "need_gpu": false,
   "context_menu": {
-    "target": ["videos_project", "images_project", "images_dataset", "videos_dataset", "ecosystem"],
+    "target": ["ecosystem", "images_project", "images_dataset", "videos_project", "videos_dataset"],
     "context_root": "Neural Networks"
   }
 }
