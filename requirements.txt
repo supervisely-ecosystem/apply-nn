@@ -1,1 +1,1 @@
-git+http://github.com.com/supervisely/supervisely@predict-app
+git+http://github.com/supervisely/supervisely@predict-app
