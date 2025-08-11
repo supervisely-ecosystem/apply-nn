@@ -5,8 +5,10 @@ import supervisely as sly
 from supervisely._utils import sly_env
 from supervisely.nn.inference.predict_app.predict_app import PredictApp
 
-dotenv.load_dotenv(os.path.expanduser("~/supervisely(dev).env"))
-dotenv.load_dotenv("local.env")
+if sly.is_development():
+    # dotenv.load_dotenv(os.path.expanduser("~/supervisely(dev).env"))
+    dotenv.load_dotenv("local.env")
+    dotenv.load_dotenv(os.path.expanduser("~/supervisely.env"))
 
 api = sly.Api()
 predict_app = PredictApp(api)
