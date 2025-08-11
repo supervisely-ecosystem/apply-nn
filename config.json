@@ -1,7 +1,9 @@
 {
-  "name": "Apply Neural Networks",
+  "name": "Predict App",
   "type": "app",
   "version": "2.0.0",
+  "icon": "https://github.com/supervisely-ecosystem/apply-nn/releases/download/v0.0.1/app-icon.jpg",
+  "poster": "https://github.com/supervisely-ecosystem/apply-nn/releases/download/v0.0.1/app-poster.jpg",
   "categories": [
     "neural network",
     "images",
@@ -24,7 +26,13 @@
   "headless": false,
   "need_gpu": false,
   "context_menu": {
-    "target": ["ecosystem", "images_project", "images_dataset", "videos_project", "videos_dataset"],
+    "target": [
+      "ecosystem",
+      "images_project",
+      "images_dataset",
+      "videos_project",
+      "videos_dataset"
+    ],
     "context_root": "Neural Networks"
   }
 }
