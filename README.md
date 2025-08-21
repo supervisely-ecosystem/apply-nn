@@ -29,8 +29,38 @@ With this app you can:
 
 When you select a model (e.g. `YOLO11n-det`), **Apply NN** will automatically launch the corresponding serving app (e.g. **[Serve YOLOv8 - v12](https://ecosystem.supervisely.com/apps/yolo/supervisely_integration/serve)**).
 
-# How To Run
+# How To Use
 
-1. Start **Apply NN** from the **context menu** of a project or dataset
-2. Select a model or connect to an already running serving session
-3. Configure inference settings and run the process
+## Step 1. Select Data to Predict
+
+Select images project or video to predict.
+
+![Step 1](https://github.com/supervisely-ecosystem/apply-nn/releases/download/v0.0.1/step-1-predict-app.png)
+
+## Step 2. Select Model
+
+Connect to an already running serving session or select a model to deploy.
+
+![Step 2.1](https://github.com/supervisely-ecosystem/apply-nn/releases/download/v0.0.1/step-2-2-predict-app.png)
+
+Wait for the model to be deployed and press Select button.
+
+![Step 2.2](https://github.com/supervisely-ecosystem/apply-nn/releases/download/v0.0.1/step-2-predict-app.png)
+
+## Step 3. Select Classes
+
+Select classes to predict.
+
+![Step 3](https://github.com/supervisely-ecosystem/apply-nn/releases/download/v0.0.1/step-3-predict-app.png)
+
+## Step 4. Configure Inference Settings
+
+![Step 4](https://github.com/supervisely-ecosystem/apply-nn/releases/download/v0.0.1/step-4-predict-app.png)
+
+## Step 5. Enter output project name and press Run button
+
+![Step 5](https://github.com/supervisely-ecosystem/apply-nn/releases/download/v0.0.1/step-5-predict-app.png)
+
+## Step 6. Wait for the process to finish
+
+![Step 6](https://github.com/supervisely-ecosystem/apply-nn/releases/download/v0.0.1/step-6-predict-app.png)
