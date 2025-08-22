@@ -31,9 +31,9 @@ When you select a model (e.g. `YOLO11n-det`), **Apply NN** will automatically la
 
 # How To Use
 
-## Step 1. Select Data to Predict
+## Step 1. Select Input Data to Predict
 
-Select images project or video to predict.
+Select project and datasets that you want to predict.
 
 ![Step 1](https://github.com/supervisely-ecosystem/apply-nn/releases/download/v0.0.1/step-1-predict-app.png)
 
