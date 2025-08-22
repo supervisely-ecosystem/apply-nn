@@ -7,9 +7,6 @@
   "categories": [
     "neural network",
     "images",
-    "videos",
-    "detection & tracking",
-    "segmentation & tracking",
     "object detection",
     "semantic segmentation",
     "instance segmentation",
@@ -18,7 +15,7 @@
   ],
   "entrypoint": "python -m uvicorn src.main:app --host 0.0.0.0 --port 8000",
   "port": 8000,
-  "description": "This app applies neural networks to images and videos in a project. It supports various neural network tasks such as object detection, semantic segmentation, and instance segmentation. The app can be used to process both images and videos.",
+  "description": "This app applies neural networks to images. It supports various neural network tasks such as object detection, semantic segmentation, and instance segmentation.",
   "docker_image": "supervisely/labeling:6.73.406",
   "instance_version": "6.14.0",
   "task_location": "workspace_tasks",
@@ -26,13 +23,7 @@
   "headless": false,
   "need_gpu": false,
   "context_menu": {
-    "target": [
-      "ecosystem",
-      "images_project",
-      "images_dataset",
-      "videos_project",
-      "videos_dataset"
-    ],
+    "target": ["ecosystem", "images_project", "images_dataset"],
     "context_root": "Neural Networks"
   }
 }
