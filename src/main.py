@@ -32,6 +32,12 @@ def get_load_data_from_env():
     }
     if model_data:
         data["model"] = model_data
+
+    should_run = os.environ.get("modal.state.run", "false").lower() == "true"
+    stop_after_run = os.environ.get("modal.state.stopAfterRun", "false").lower() == "true"
+
+    data["run"] = should_run
+    data["stop_after_run"] = stop_after_run
     return data
 
 predict_app.load_from_json(get_load_data_from_env())
