@@ -15,11 +15,11 @@ app = predict_app.app
 def get_load_data_from_env():
     project_id = sly_env.project_id(raise_not_found=False)
     dataset_id = sly_env.dataset_id(raise_not_found=False)
-    items_data = {}
+    input_data = {}
     if dataset_id:
-        items_data = {"dataset_ids": [dataset_id]}
+        input_data = {"dataset_ids": [dataset_id]}
     elif project_id:
-        items_data = {"project_id": project_id}
+        input_data = {"project_id": project_id}
     train_task_id = os.environ.get("modal.state.trainTaskId", None)
     model_data = None
     if train_task_id:
@@ -28,7 +28,7 @@ def get_load_data_from_env():
             "train_task_id": int(train_task_id),
         }
     data = {
-        "items": items_data,
+        "input": input_data,
     }
     if model_data:
         data["model"] = model_data
