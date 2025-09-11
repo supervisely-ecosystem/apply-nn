@@ -20,20 +20,21 @@
 
 **Apply NN** is an all-in-one tool for deploying and using neural network models on the Supervisely platform.
 
-With this app you can:
+With this app, you can:
 
 - Serve pretrained or custom models (trained inside Supervisely)
 - Connect to already running serving sessions
 - Perform inference on a **project** or a specific **dataset**
 - Configure inference settings
+- Works with all Neural Network applications, integrated into Supervisely
 
-When you select a model (e.g. `YOLO11n-det`), **Apply NN** will automatically launch the corresponding serving app (e.g. **[Serve YOLOv8 - v12](https://ecosystem.supervisely.com/apps/yolo/supervisely_integration/serve)**).
+When you select a model, the **Apply NN** will automatically launch the corresponding serving app.
 
 # How To Use
 
 ## Step 1. Select Input Data to Predict
 
-Select project and datasets that you want to predict.
+Select the project and datasets that you want to predict.
 
 ![Step 1](https://github.com/supervisely-ecosystem/apply-nn/releases/download/v0.0.1/step-1-predict-app.png)
 
@@ -43,7 +44,7 @@ Connect to an already running serving session or select a model to deploy.
 
 ![Step 2.1](https://github.com/supervisely-ecosystem/apply-nn/releases/download/v0.0.1/step-2-2-predict-app.png)
 
-Wait for the model to be deployed and press Select button.
+Wait for the model to be deployed and press the Select button.
 
 ![Step 2.2](https://github.com/supervisely-ecosystem/apply-nn/releases/download/v0.0.1/step-2-predict-app.png)
 
@@ -57,7 +58,7 @@ Select classes to predict.
 
 ![Step 4](https://github.com/supervisely-ecosystem/apply-nn/releases/download/v0.0.1/step-4-predict-app.png)
 
-## Step 5. Enter output project name and press Run button
+## Step 5. Enter the output project name and press the Run button
 
 ![Step 5](https://github.com/supervisely-ecosystem/apply-nn/releases/download/v0.0.1/step-5-predict-app.png)
 
