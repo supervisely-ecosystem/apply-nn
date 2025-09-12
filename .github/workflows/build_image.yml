@@ -12,6 +12,11 @@ on:
         required: false
         type: string
         default: ''
+      latest_tag:
+        description: 'Also tag image as "latest"'
+        required: false
+        type: boolean
+        default: false
 
 jobs:
   docker-build-and-push:
@@ -22,5 +27,6 @@ jobs:
     with:
       tag_version: ${{ github.event.inputs.tag_version }}
       dockerfile_path: Dockerfile
-      image_name: "" # <- optional, if not set, will be equal to repository name
+      image_name: "predict-app"
       sdk_version: ${{ github.event.inputs.sdk_version }}
+      latest_tag: ${{ github.event.inputs.latest_tag }}
