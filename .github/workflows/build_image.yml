@@ -29,4 +29,4 @@ jobs:
       dockerfile_path: Dockerfile
       image_name: "predict-app"
       sdk_version: ${{ github.event.inputs.sdk_version }}
-      latest_tag: ${{ github.event.inputs.latest_tag }}
+      latest_tag: ${{ github.event.inputs.latest_tag == 'true' }}
