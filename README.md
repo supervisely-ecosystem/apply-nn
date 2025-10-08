@@ -58,6 +58,10 @@ Select classes to predict.
 
 ![Step 4](https://github.com/supervisely-ecosystem/apply-nn/releases/download/v0.0.1/step-4-predict-app.png)
 
+If you want to enable tracking, check the **Enable tracking** option and, if needed, provide tracker parameters.  
+For more details about tracking and its hyperparameters, see the [video object tracking documentation](https://docs.supervisely.com/neural-networks/inference-and-deployment/video-object-tracking).
+
+
 ## Step 5. Enter the output project name and press the Run button
 
 ![Step 5](https://github.com/supervisely-ecosystem/apply-nn/releases/download/v0.0.1/step-5-predict-app.png)
