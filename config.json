@@ -1,33 +1,39 @@
 {
-  "name": "Predict App",
-  "type": "app",
-  "version": "2.0.0",
-  "icon": "https://github.com/supervisely-ecosystem/apply-nn/releases/download/v0.0.1/app-icon.jpg",
-  "icon_cover": true,
-  "poster": "https://github.com/supervisely-ecosystem/apply-nn/releases/download/v0.0.1/app-poster.jpg",
-  "categories": [
-    "neural network",
-    "images",
-    "object detection",
-    "semantic segmentation",
-    "instance segmentation",
-    "inference interfaces",
-    "labeling",
-    "videos",
-    "detection & tracking",
-    "segmentation & tracking"
-  ],
-  "entrypoint": "python -m uvicorn src.main:app --host 0.0.0.0 --port 8000",
-  "port": 8000,
-  "description": "This app applies neural networks to images. It supports various neural network tasks such as object detection, semantic segmentation, and instance segmentation.",
-  "docker_image": "supervisely/labeling:6.73.465",
-  "instance_version": "6.15.2",
-  "task_location": "workspace_tasks",
-  "isolate": true,
-  "headless": false,
-  "need_gpu": false,
-  "context_menu": {
-    "target": ["ecosystem", "images_project", "images_dataset", "videos_project", "videos_dataset"],
-    "context_root": "Neural Networks"
-  }
+	"name": "Predict App",
+	"type": "app",
+	"version": "2.0.0",
+	"icon": "https://github.com/supervisely-ecosystem/apply-nn/releases/download/v0.0.1/app-icon.jpg",
+	"icon_cover": true,
+	"poster": "https://github.com/supervisely-ecosystem/apply-nn/releases/download/v0.0.1/app-poster.jpg",
+	"categories": [
+		"neural network",
+		"images",
+		"object detection",
+		"semantic segmentation",
+		"instance segmentation",
+		"inference interfaces",
+		"labeling",
+		"videos",
+		"detection & tracking",
+		"segmentation & tracking"
+	],
+	"entrypoint": "python -m uvicorn src.main:app --host 0.0.0.0 --port 8000",
+	"port": 8000,
+	"description": "This app applies neural networks to images. It supports various neural network tasks such as object detection, semantic segmentation, and instance segmentation.",
+	"docker_image": "supervisely/labeling:6.73.468",
+	"instance_version": "6.15.2",
+	"task_location": "workspace_tasks",
+	"isolate": true,
+	"headless": false,
+	"need_gpu": false,
+	"context_menu": {
+		"target": [
+			"ecosystem",
+			"images_project",
+			"images_dataset",
+			"videos_project",
+			"videos_dataset"
+		],
+		"context_root": "Neural Networks"
+	}
 }
