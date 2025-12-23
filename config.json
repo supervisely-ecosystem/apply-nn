@@ -20,7 +20,7 @@
   "entrypoint": "python -m uvicorn src.main:app --host 0.0.0.0 --port 8000",
   "port": 8000,
   "description": "This app applies neural networks to images. It supports various neural network tasks such as object detection, semantic segmentation, and instance segmentation.",
-  "docker_image": "supervisely/labeling:6.73.484",
+  "docker_image": "supervisely/labeling:6.73.486",
   "instance_version": "6.15.35",
   "task_location": "workspace_tasks",
   "isolate": true,
