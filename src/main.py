@@ -14,12 +14,16 @@ api = sly.Api()
 predict_app = PredictApp(api)
 app = predict_app.app
 
+
 def get_load_data_from_env():
     project_id = sly_env.project_id(raise_not_found=False)
     dataset_id = sly_env.dataset_id(raise_not_found=False)
+    collection_id = sly_env.collection_id(raise_not_found=False)
     input_data = {}
     if dataset_id:
         input_data = {"dataset_ids": [dataset_id]}
+    elif collection_id:
+        input_data = {"collection_id": collection_id}
     elif project_id:
         input_data = {"project_id": project_id}
     train_task_id = os.environ.get("modal.state.trainTaskId", None)
@@ -41,5 +45,6 @@ def get_load_data_from_env():
     data["run"] = should_run
     data["stop_after_run"] = stop_after_run
     return data
+
 
 predict_app.load_from_json(get_load_data_from_env())
