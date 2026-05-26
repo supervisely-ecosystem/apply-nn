@@ -31,8 +31,10 @@
       "ecosystem",
       "images_project",
       "images_dataset",
+      "images_collection",
       "videos_project",
-      "videos_dataset"
+      "videos_dataset",
+      "videos_collection"
     ],
     "context_root": "Neural Networks"
   }
