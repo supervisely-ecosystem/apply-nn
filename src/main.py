@@ -14,6 +14,7 @@ api = sly.Api()
 predict_app = PredictApp(api)
 app = predict_app.app
 
+
 def get_load_data_from_env():
     project_id = sly_env.project_id(raise_not_found=False)
     dataset_id = sly_env.dataset_id(raise_not_found=False)
@@ -41,5 +42,6 @@ def get_load_data_from_env():
     data["run"] = should_run
     data["stop_after_run"] = stop_after_run
     return data
+
 
 predict_app.load_from_json(get_load_data_from_env())
