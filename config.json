@@ -21,7 +21,7 @@
   "port": 8000,
   "description": "This app applies neural networks to images. It supports various neural network tasks such as object detection, semantic segmentation, and instance segmentation.",
   "docker_image": "supervisely/labeling:6.73.580",
-  "instance_version": "6.15.60",
+  "instance_version": "6.16.19",
   "task_location": "workspace_tasks",
   "isolate": true,
   "headless": false,
